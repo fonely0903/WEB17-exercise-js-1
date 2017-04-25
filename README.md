@@ -12,6 +12,8 @@
 ```
 1-3. 將此 todoElement 顯示到 todoListEle 裡面。
 
+___
+
 ## 2.點選待辦事項時，可顯示變色表示已完成
 2-1. 在新增的 todoElement 上監聽 click 事件，觸發時請執行以下行為：
 * 將對應的 `todoData` [完成與否] 值設定為完成狀態(true)
@@ -24,8 +26,12 @@
 <a href="#" class="list-group-item list-group-item-success">TODO的敘述文字</a>
 ```
 
+___
+
 ## 3.點選“全部標示已完成”按鈕時，所有待辦事項皆變色
 * 利用 for loop
+
+___
 
 ## 會用到的API
 ```js
