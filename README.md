@@ -2,23 +2,22 @@
 
 # Requirement
 ## 1.點選新增按鈕時，可顯示新的待辦事項在清單中
-1-1. 將新增的 TODO 用 object 表示（以下以變數todoData說明)
-* 需有[敘述文字]以及[完成與否]兩屬性(物件的 key 請自己命名)。
+提示1. 將新增的 TODO 以字串存取
 
-1-2. 用上一步驟的 object 裡的資料 創建 todoElement
+提示2. 用上一步驟的資料 創建 todoElement
 * 必須要有以下結構
 ```js
 <a href="#" class="list-group-item">TODO的敘述文字</a>
 ```
-1-3. 將此 todoElement 顯示到 todoListEle 裡面。
+提示3. 將此 todoElement 顯示到 todoListEle 裡面。
 
 ___
 
-## 2.點選待辦事項時，可顯示變色表示已完成
-2-1. 在新增的 todoElement 上監聽 click 事件，觸發時請執行以下行為：
+## 2.點選待辦事項時，可顯示變色表示已完成；點選已完成項目，則變回未完成之底色
+提示1. 在新增的 todoElement 上監聽 click 事件，觸發時請執行以下行為：
 * 將對應的 `todoData` [完成與否] 值設定為完成狀態(true)
 
-2-2. 更新被點擊的 todoElement 的 class
+提示2. 更新被點擊的 todoElement 的 class
 ```js
 //如果他的[完成與否]狀態為未完成，結構如下
 <a href="#" class="list-group-item">TODO的敘述文字</a>
@@ -30,6 +29,15 @@ ___
 
 ## 3.點選“全部標示已完成”按鈕時，所有待辦事項皆變色
 * 利用 for loop
+
+___
+
+## ID與className說明
+* 待辦事項輸入欄  ID："todo-input"
+* 待辦事項新增鈕  ID："todo-submit"
+* 待辦事項"清單"  ID："todo-todoList"
+* 待辦事項"節點"  ID："list-group-item"
+* 全部標示已完成鈕  className："todo-allDone"
 
 ___
 
@@ -49,6 +57,9 @@ document.getElementById("<anchor element id>").href // 設定超連結
 
 // 新增監聽事件
 element.addEventListener
+
+// 取得觸發監聽器的事件節點
+e.currentTarget
 
 // array 新增子物件
 [].length // 取得 Array 裡面物件的數量
