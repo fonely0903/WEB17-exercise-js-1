@@ -15,9 +15,7 @@ ___
 
 ## 2.點選待辦事項時，可顯示變色表示已完成；點選已完成項目，則變回未完成之底色
 提示1. 在新增的 todoElement 上監聽 click 事件，觸發時請執行以下行為：
-* 將對應的 `todoData` [完成與否] 值設定為完成狀態(true)
-
-提示2. 更新被點擊的 todoElement 的 class
+* 更新被點擊的 todoElement 的 class
 ```js
 //如果他的[完成與否]狀態為未完成，結構如下
 <a href="#" class="list-group-item">TODO的敘述文字</a>
